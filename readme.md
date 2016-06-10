@@ -13,32 +13,13 @@ $ npm install --save json-to-csv-stream
 ## Usage
 
 ```js
-var jsonToCsvStream = require('json-to-csv-stream')
+var jsonToCsv = require('json-to-csv-stream')
+var fs = require('fs')
 
-jsonToCsvStream('input')
-//=> output
+fs.createReadStream('./data.json')
+  .pipe(jsonToCsv())
+  .pipe(fs.createWriteStream('./data.csv'))
 ```
-
-## API
-
-#### `jsonToCsvStream(input, [options])` -> `output`
-
-##### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-##### options
-
-###### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
-
 
 ## License
 
