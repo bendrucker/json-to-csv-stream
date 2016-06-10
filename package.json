@@ -1,0 +1,32 @@
+{
+  "name": "json-to-csv-stream",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Convert a JSON array stream into CSV rows",
+  "license": "MIT",
+  "repository": "bendrucker/json-to-csv-stream",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "json-to-csv-stream"
+  ],
+  "devDependencies": {
+    "standard": "^6.0.0",
+    "string-to-stream": "~1.1.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "JSONStream": "~1.1.2",
+    "csv-write-stream": "~2.0.0",
+    "pumpify": "~1.3.4"
+  }
+}
