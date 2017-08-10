@@ -7,8 +7,9 @@ const through = require('through2')
 
 module.exports = JSONToCsv
 
-function JSONToCsv () {
-  return pumpify(JSONStream.parse(), split(), CsvStream())
+function JSONToCsv (options) {
+  options = options || {}
+  return pumpify(JSONStream.parse(), split(), CsvStream(options.csv))
 }
 
 function split () {
