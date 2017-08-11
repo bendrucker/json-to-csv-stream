@@ -21,6 +21,34 @@ fs.createReadStream('./data.json')
   .pipe(fs.createWriteStream('./data.csv'))
 ```
 
+## Options
+
+You can pass [JSONStream](https://www.npmjs.com/package/JSONStream) and/or [csv-write-stream](https://www.npmjs.com/package/csv-write-stream) options to `json-to-csv-stream`.
+
+```js
+{
+  // JSONStream options
+  path: undefined,
+
+  // csv-write-stream options
+  csv: {
+    separator: ',',
+    newline: '\n',
+    headers: undefined,
+    sendHeaders: true
+  }
+}
+```
+
+Example:
+
+```js
+jsonToCsv({
+  path: 'clients.*',
+  csv: { headers: ['name', 'address'], separator: ';' }
+})
+```
+
 ## License
 
 MIT © [Ben Drucker](http://bendrucker.me)
