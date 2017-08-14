@@ -1,7 +1,7 @@
 {
   "name": "json-to-csv-stream",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Convert a JSON array stream into CSV rows",
   "license": "MIT",
   "repository": "bendrucker/json-to-csv-stream",
