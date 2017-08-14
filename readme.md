@@ -21,6 +21,29 @@ fs.createReadStream('./data.json')
   .pipe(fs.createWriteStream('./data.csv'))
 ```
 
+## API
+
+#### `jsonToCsvStream(options)` -> `Transform`
+
+##### options
+
+Type: `object`  
+Default: `{}`
+
+###### path
+
+Type: `any`
+Default: `undefined`
+
+A path for [`JSONStream.parse`](https://github.com/dominictarr/JSONStream#jsonstreamparsepath).
+
+###### csv
+
+Type: `object`  
+Default: `undefined`
+
+Options to pass to [`csv-write-stream`](https://github.com/maxogden/csv-write-stream#var-writer--csvwriteroptions).
+
 ## License
 
 MIT © [Ben Drucker](http://bendrucker.me)
