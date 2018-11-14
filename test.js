@@ -7,7 +7,7 @@ const toCsv = require('./')
 
 test('default behavior', function (t) {
   t.plan(1)
-  const data = [{foo: 'bar', bar: 'baz'}, {foo: 'bar1', bar: 'baz1'}]
+  const data = [{ foo: 'bar', bar: 'baz' }, { foo: 'bar1', bar: 'baz1' }]
   const csv = toStream(JSON.stringify(data)).pipe(toCsv())
 
   read(csv, function (err, string) {
@@ -18,7 +18,7 @@ test('default behavior', function (t) {
 
 test('send csv-write-stream options', function (t) {
   t.plan(1)
-  const data = [{foo: 'bar', bar: 'baz'}, {foo: 'bar1', bar: 'baz1'}]
+  const data = [{ foo: 'bar', bar: 'baz' }, { foo: 'bar1', bar: 'baz1' }]
   const options = {
     csv: {
       separator: ';',
@@ -38,8 +38,8 @@ test('send csv-write-stream options', function (t) {
 test('send JSONStream options', function (t) {
   t.plan(1)
   const data = [
-    {foo: 'bar', bar: { baz: 'hi', biz: 'ok' }},
-    {foo: 'bar1', bar: { baz: 'hi1', biz: 'ok1' }}
+    { foo: 'bar', bar: { baz: 'hi', biz: 'ok' } },
+    { foo: 'bar1', bar: { baz: 'hi1', biz: 'ok1' } }
   ]
   const options = { path: '*.bar' }
   const csv = toStream(JSON.stringify(data)).pipe(toCsv(options))
