@@ -18,7 +18,7 @@
   ],
   "devDependencies": {
     "read-all-stream": "~3.1.0",
-    "standard": "^13.0.1",
+    "standard": "^14.0.0",
     "string-to-stream": "~2.0.0",
     "tape": "^4.0.0"
   },
