@@ -1,4 +1,4 @@
-# json-to-csv-stream [![Build Status](https://travis-ci.org/bendrucker/json-to-csv-stream.svg?branch=master)](https://travis-ci.org/bendrucker/json-to-csv-stream) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/json-to-csv-stream.svg)](https://greenkeeper.io/)
+# json-to-csv-stream [![Build Status](https://travis-ci.org/bendrucker/json-to-csv-stream.svg?branch=master)](https://travis-ci.org/bendrucker/json-to-csv-stream)
 
 > Convert a JSON array stream into CSV rows
 
