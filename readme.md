@@ -1,4 +1,4 @@
-# json-to-csv-stream [![Build Status](https://travis-ci.org/bendrucker/json-to-csv-stream.svg?branch=master)](https://travis-ci.org/bendrucker/json-to-csv-stream)
+# json-to-csv-stream [![tests](https://github.com/bendrucker/json-to-csv-stream/workflows/tests/badge.svg)](https://github.com/bendrucker/json-to-csv-stream/actions?query=workflow%3Atests)
 
 > Convert a JSON array stream into CSV rows
 
